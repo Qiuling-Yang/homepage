@@ -54,7 +54,7 @@
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:150px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-16">
-    <h3><b>YUNHE</b></h3>
+    <h3><b>Qiuling</b></h3>
   </div>
   <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
     <a href="#education" class="w3-bar-item w3-button">教育</a>
@@ -72,10 +72,13 @@
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
   </div>
 </header>
-  <!-- Overlay effect when opening sidebar on small screens -->
+  
+<!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:150px">
+ 
 <!-- Push down content on small screens -->
 <div class="w3-hide-large" style="margin-top:83px"></div>
   
@@ -92,12 +95,97 @@
         </tbody></table>
   </div>
  
+  <!-- The Education Section -->
+  <div class="w3-container w3-light-grey w3-padding-32" id="education">
+    <h2>教育</h2>
+    <p><li> 2016.09-2020.06，（本科）在四川大学电气工程及其自动化专业就读，绩点3.66（满绩为4）。 </li></p>
+    <p><li> 2020.09-2022.06，（硕士）在武汉大学电力工程专业就读，绩点3.85（满绩为4）。 </li></p>
+    <p><li> 2022.09至今，（博士）在武汉大学电力工程专业就读，绩点4（满绩为4）。 </li></p>
+  </div>
   
+<!-- The Publications Section -->
+  <div class="w3-container w3-padding-32" id="publications">
+    <h2>出版</h2>
+    <p class="w3-justify">
+    <h4><li>[1] Yang Qiuling, Deng Changhong*, Chang Xiqiang. Ultra-short-term / short-term wind speed prediction based on improved singular spectrum analysis[J]. Renewable Energy, 2022, 184.</li></h4>
+    <p class="w3-justify">针对风电场采集的风速数据容易引入噪声信息的问题，提出了一种基于改进奇异谱分析的风速预测方法。首先用奇异谱分析将风速序列分解为一系列子序列，引入奇异熵判断风速序列的噪声成分并去除。然后利用人工神经网络模型对主要序列进行预测并重构得到风速预测结果。最后通过实验验证了本文改进奇异谱分解方法的有效性。</p> 
+    </p>
+    <h4><li>[2] Yang Qiuling, Deng Changhong*, Wang Xuebin, et al. A Multi-scale Assessment Method for the Complementary of Wind Power and Photovoltaic Based on Singular Spectral Analysis[C]// 2021 4th International Conference on Energy, Electrical and Power Engineering, April 23, 2021, Chongqing, China: 1161-1166.</li></h4>
+    <p class="w3-justify">考虑到不同机组的响应能力不同，本文从不同变化速率的角度进行风光多尺度互补性评估研究。首先根据风光的出力特性将风光资源数据转换成出力数据，然后采用奇异谱分析将出力分解到低频、中频和高频三个尺度上，最后在不同尺度上依据局部波动的变化对风光互补性进行评估计算。评估结果可以准确表征风光在不同尺度上的互补特性，同时为多能互补系统的调度运行提供参考依据，为其优化配置提供新的信息。</p> 
+    </p>
+    <h4><li>[3] Xu Zhenghua, Deng Changhong*, Yang Qiuling. Flexibility of variable-speed pumped-storage unit during primary frequency control and corresponding assessment method[J]. INTERNATIONAL JOURNAL OF ELECTRICAL POWER & ENERGY SYSTEMS, 2022, 145.</li></h4>
+    <p class="w3-justify">为了描述变速抽水蓄能机组在初级频率控制(PFC)过程中的灵活性，提出了一种基于模式搜索的参数优化算法的VSPSU 的 PFC 策略。最后通过案例研究验证了所提出的评估方法在各种场景下的准确性和充分性，同时计算结果表明，VSPSU的灵活性平均比传统的定速抽水蓄能机组高33.97%，同时也揭示了VSPSU灵活性的可变性。</p> 
+    </p>
+    <h4><li>[4] Ma Xiaoyang, Yang Qiuling*, Chen Chang, et al. Harmonic and Interharmonic Analysis of Mixed Dense Frequency Signals[J]. IEEE Transactions on Industrial Electronics, 2021, 68(10):10142-10153.</li></h4>
+    <h4><li>[5] Wang G ,  Ma X ,  Wang W , et al. Multi-Harmonic Sources Location Based on Sparse Component Analysis and Complex Independent Component Analysis[J]. IET Generation Transmission & Distribution, 2020, 14(5). (5作)</li></h4>
+</div> 
   
-  
-  
-  
-  
-  
-  
-  
+<!-- The Projects Section -->
+<div class="w3-container w3-padding-32" id="publications">
+    <h2>研究项目</h2>
+    <p class="w3-justify">
+    <h4><li>1.基于人在回路混合增强智能的新能源功率协同预测技术研究，中国南方电网有限责任公司，2023.1-2024.6。担任主要研究员。</li></h4>
+    <p class="w3-justify">本项目共分3个部分，1.面向新能源功率预测的人在回路混合增强智能技术应用场景研究；2.基于人在回路混合增强智能的新能源预测精度提升技术研究；3.多数据来源、多预测结果的新能源功率智能组合预测技术研究。我主要研究后两个部分，重点是基于实际风电场数据研究风电预测精度提升技术和组合预测方法。</p> 
+    </p>
+    <h4><li>2.300MW级可变速抽水蓄能交流励磁系统控制策略及仿真实验，中国广州擎天实业有限公司，2022.1-2025.1.担任主要研究员。</li></h4>
+    <p class="w3-justify">本项目共分2个部分，1.抽蓄全工况（包含发电和水泵工况下启动、并网、运行控制、停机等）策略研究及仿真，2.根据甲方研制的控制器，基于RT-LAB完成硬件在环仿真实验。目前我已经基于厂家提供的实际机组、调速器、变流器等参数，在Simulink中完成了抽水蓄能机组全工况仿真，形成了抽蓄全工况策略研究报告，后续将继续在RT-LAB平台验证。</p> 
+    </p>
+</div> 
+
+<!-- The Academic-works Section -->
+<div class="w3-container w3-light-grey w3-padding-32" id="academic-works">
+    <h2>学术活动</h2>
+    <p><li>2021.04.23-2021.04.25,中国重庆参加国际会议并做口头报告，会议名称：2021 the 4th International Conference on Energy,Electrical and Power Engineering(CEEPE 2021).</li></p>
+    <p><li>2022.12.09-2022.12.11,线上视频参加国际会议并做口头报告，会议名称：2022 The 3rd International Conference on Power Engineering (ICPE 2022).</li></p>
+</div>
+
+ <!-- The Awards Section -->
+  <div class="w3-container w3-padding-32" id="award">
+    <h2>获奖</h2>
+    <p><li> 2017, 国家奖学金（当前高等学校学生能够获得的荣誉等级最高的国家级奖学金）</p>
+    <p><li> 2020, 综合素质A级证书（中国四川省对大学生综合素质唯一的官方认证模式）</p>
+    <p><li> 2017, 四川大学优秀学生干部</p>
+    <p><li> 2018, 全国大学生工程训练综合能力比赛四川大学比赛（一等奖）</p>
+    <p><li> 2021, 全“华为杯”第十八届中国研究生数学建模竞赛（三等奖）</p>
+</div>
+    
+ <!-- The Skills Section -->
+  <div class="w3-container w3-padding-32" id="skills">
+    <h2>技能</h2>    
+    <p><li> 编程技能：熟练使用C、C++、lingo、MATLAB及相关软件（matpower、Cplex、神经网络工具箱等）</p>
+    <p><li> 仿真技能：熟练使用Simulink构建复杂电力系统并进行稳态、暂态仿真，以及使用RT-LAB进行硬件在环仿真</p>
+    <p><li> 英语技能：大学英语6级491分（合格）</p>
+ </div>   
+    
+    
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+
